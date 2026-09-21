@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>홍길동 · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="홈으로">
+      <span class="logo-mark">HK</span>
+      <span class="logo-text">홍길동</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#projects">프로젝트</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Frontend Developer</p>
+        <h1>안녕하세요,<br />홍길동입니다.</h1>
+        <p class="lede">
+          깔끔한 UI와 읽기 좋은 코드를 지향합니다.
+          웹에서 아이디어를 빠르게 형태 있게 만드는 일을 좋아합니다.
+        </p>
+        <a class="btn" href="#projects">프로젝트 보기</a>
+      </div>
+      <div class="hero-media">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80"
+          alt="노트북 앞에서 작업하는 분위기"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>소개</h2>
+      <p>
+        HTML, CSS, JavaScript로 인터페이스를 만들고,
+        사용자가 바로 이해되는 레이아웃과 인터랙션을 설계합니다.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>프로젝트</h2>
+      <div class="cards">
+        <a class="card" href="project-dashboard.html">
+          <div
+            class="card-thumb"
+            style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')"
+          ></div>
+          <div class="card-body">
+            <h3>대시보드 UI</h3>
+            <p>지표를 한눈에 보여주는 반응형 대시보드. 카드 그리드와 필터 인터랙션.</p>
+            <span class="tags">HTML · CSS · JS</span>
+          </div>
+        </a>
+        <a class="card" href="project-landing.html">
+          <div
+            class="card-thumb"
+            style="background-image: url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80')"
+          ></div>
+          <div class="card-body">
+            <h3>랜딩 페이지</h3>
+            <p>브랜드 톤을 살린 원페이지 랜딩. 스크롤 내비게이션과 부드러운 전환.</p>
+            <span class="tags">HTML · CSS · JS</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>연락</h2>
+      <p>협업이나 문의는 아래 메일로 보내 주세요.</p>
+      <a class="btn btn-ghost" href="mailto:hong@example.com">hong@example.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 홍길동</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

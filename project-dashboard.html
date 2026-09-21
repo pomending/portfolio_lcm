@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대시보드 UI · 홍길동</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="홈으로">
+      <span class="logo-mark">HK</span>
+      <span class="logo-text">홍길동</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="index.html#about">소개</a>
+      <a href="index.html#projects">프로젝트</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <a class="back" href="index.html#projects">← 프로젝트 목록</a>
+      <p class="eyebrow">Project</p>
+      <h1>대시보드 UI</h1>
+      <div class="project-meta">
+        <span>역할: Frontend</span>
+        <span>스택: HTML · CSS · JS</span>
+      </div>
+      <img
+        class="project-cover"
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
+        alt="대시보드 UI 화면"
+      />
+    </section>
+
+    <section class="section project-content">
+      <h2>개요</h2>
+      <p>
+        지표를 한눈에 보여주는 반응형 대시보드입니다.
+        카드 그리드로 핵심 수치를 배치하고, 필터로 기간·카테고리를 전환할 수 있습니다.
+      </p>
+      <h2>담당 작업</h2>
+      <ul>
+        <li>KPI 카드와 차트 영역의 레이아웃 설계</li>
+        <li>필터 인터랙션과 상태 표시</li>
+        <li>모바일에서 한 열로 접히는 그리드 구현</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 홍길동</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

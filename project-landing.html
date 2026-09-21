@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>랜딩 페이지 · 홍길동</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="홈으로">
+      <span class="logo-mark">HK</span>
+      <span class="logo-text">홍길동</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="index.html#about">소개</a>
+      <a href="index.html#projects">프로젝트</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <a class="back" href="index.html#projects">← 프로젝트 목록</a>
+      <p class="eyebrow">Project</p>
+      <h1>랜딩 페이지</h1>
+      <div class="project-meta">
+        <span>역할: Frontend</span>
+        <span>스택: HTML · CSS · JS</span>
+      </div>
+      <img
+        class="project-cover"
+        src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1400&q=80"
+        alt="랜딩 페이지 화면"
+      />
+    </section>
+
+    <section class="section project-content">
+      <h2>개요</h2>
+      <p>
+        브랜드 톤을 살린 원페이지 랜딩입니다.
+        스크롤 내비게이션과 부드러운 전환으로 섹션 간 흐름을 맞췄습니다.
+      </p>
+      <h2>담당 작업</h2>
+      <ul>
+        <li>히어로·소개·CTA 섹션 구성</li>
+        <li>앵커 기반 스크롤 내비게이션</li>
+        <li>전환과 타이포그래피로 브랜드 톤 정리</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 홍길동</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
